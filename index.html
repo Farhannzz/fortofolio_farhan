@@ -4,7 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio - Muhammad Farhan Fadilah</title>
-    <link rel="stylesheet" href="style.css">
+
+    <style>
+        :root {
+            --utama: #6a11cb;
+            --sekunder: #2575fc;
+            --bg: #0f1624;
+            --teks: #e0e0e0;
+            --putih: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(180deg, var(--bg), #1a1a2e);
+            color: var(--teks);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            background: linear-gradient(90deg, var(--utama), var(--sekunder));
+            padding: 70px 20px;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        header img {
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+            border: 4px solid var(--putih);
+            margin-bottom: 20px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+            transition: transform 0.6s ease, box-shadow 0.6s ease;
+        }
+
+        header img:hover {
+            transform: scale(1.09);
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+        }
+
+        header h1 {
+            margin: 10px 0 5px;
+            font-size: 32px;
+            color: var(--putih);
+        }
+
+        header p {
+            font-size: 18px;
+            color: #e0e0e0;
+        }
+
+        /* Section */
+        section {
+            max-width: 850px;
+            margin: 70px auto;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            animation: fadeInUp 1s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+        }
+
+        h2 {
+            color: var(--putih);
+            border-bottom: 2px solid var(--putih);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style: square;
+            padding-left: 20px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            color: #bbb;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            margin-top: 40px;
+            background: rgba(0,0,0,0.3);
+            animation: fadeIn 1.5s ease;
+        }
+
+        /* Animasi */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ===========================
+        Warna Link di Bagian Kontak
+        =========================== */
+        #kontak a:link,
+        #kontak a:visited {
+            color: var(--putih);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        #kontak a:hover {
+            color: #00bfff;
+            text-decoration: underline;
+        }
+
+        #kontak p {
+            margin-top: 12px;
+            margin-bottom: 12px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: left;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
 
@@ -16,9 +153,7 @@
 
     <section id="about">
         <h2>Profil Singkat</h2>
-        <p>Saya adalah mahasiswa universitas pamulang yang bersemangat di bidang pengembangan web dan teknologi informasi 
-        dengan tujuan menghadirkan pengalaman pengguna yang menyenangkan dan efisien dan saya juga bekerja di bagian Admin
-        dan juga it support</p>
+        <p>Saya adalah mahasiswa Universitas Pamulang yang bersemangat di bidang pengembangan web dan teknologi informasi dengan tujuan menghadirkan pengalaman pengguna yang menyenangkan dan efisien. Saya juga bekerja di bagian Admin dan IT Support.</p>
     </section>
 
     <section id="education">
@@ -37,7 +172,7 @@
             <li>Magang di PT Jarvis — Magang PKL (2022)</li>
             <li>Freelance Web Designer — Proyek Portofolio Pribadi</li>
             <li>Playtopia — (2023 - 2024)</li>
-            <li>PT Spektrum Kreasi Pratama — Admin/It Support (2024 - Sekarang)</li>
+            <li>PT Spektrum Kreasi Pratama — Admin/IT Support (2024 - Sekarang)</li>
         </ul>
     </section>
 
@@ -52,8 +187,8 @@
     <section id="certifications">
         <h2>Sertifikasi</h2>
         <ul>
-            <li>Seminar Di Universitas Pamulang — Sertifikat </li>
-            <li>Magang Di PT Jarvis — Sertifikat </li>
+            <li>Seminar di Universitas Pamulang — Sertifikat</li>
+            <li>Magang di PT Jarvis — Sertifikat</li>
         </ul>
     </section>
 
@@ -62,7 +197,6 @@
         <p>Email: <a href="mailto:muh.far345@gmail.com">muh.far345@gmail.com</a></p>
         <p>Instagram: <a href="https://instagram.com/farhann.28" target="_blank">@farhann.28</a></p>
     </section>
-    
 
     <footer>
         <p>&copy; 2025 Muhammad Farhan Fadilah | All Rights Reserved</p>
